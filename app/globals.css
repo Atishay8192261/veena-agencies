@@ -1,5 +1,6 @@
 
 :root {
+  /* These are pre set colours
   --dark-bg: #000;
   --light-bg: #f6f7fb;
   --primary-color: #533fd7;
@@ -15,10 +16,28 @@
   --border-color-dark: #27263a;
   --border-color-light: #6a55f8;
   --shadow: 10px 12px 48px rgba(181, 187, 203, 0.206);
+  */
+    --dark-bg: #1d3557; /* Dark Navy Blue */
+    --light-bg: #f1faee; /* Soft Light Gray */
+    --primary-color: #177ab7; /* Steel Blue */
+    --secondary-color: #457b9d; /* Steel Blue (darker shade) */
+    --third-color: #f4a261; /* Soft Orange for Call-to-Actions */
+    --fourth-color: #e63946; /* Soft Red for Highlights or Alerts */
+    --text-color: #1d3557; /* Dark Navy Blue for Main Text */
+    --text-secondary: #2a9d8f; /* Teal for Secondary Text */
+    --text-color-dark: #264653; /* Darker Shade of Teal */
+    --text-color-light: #f1faee; /* Soft Light Gray for Text on Dark Backgrounds */
+    --title-color: #1d3557; /* Consistent Dark Navy for Titles */
+    --border-color: #a8dadc; /* Pale Cyan for Borders */
+    --border-color-dark: #264653; /* Darker Shade for Strong Borders */
+    --border-color-light: #a8dadc; /* Pale Cyan for Light Borders */
+    --shadow: 10px 12px 48px rgba(0, 0, 0, 0.1); /* Light Shadow */
+  
 }
 
 html {
   box-sizing: border-box;
+  /* background-color: var(--primary-color);*/
 }
 
 body {
@@ -29,4 +48,42 @@ body {
   padding: 0 !important;
   touch-action: pan-y, pan-x;
   transition: all 0.4s cubic-bezier(0.57, 0.25, 0.33, 1) 0s;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+
+@media (min-width: 2100px) {
+  .container{
+    max-width: 1600px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container{
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container{
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container{
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1200px;
+  }
 }
